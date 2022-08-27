@@ -7,7 +7,7 @@ public class PaddleController : MonoBehaviour
     public int speed;
     public KeyCode upKey;
     public KeyCode downKey;
-
+    
     private Rigidbody2D rig;
 
     // Start is called before the first frame update
@@ -22,6 +22,7 @@ public class PaddleController : MonoBehaviour
         //object gerak pakai input
         MoveObject(GetInput());
     }
+
     private Vector2 GetInput()
     {
         Vector2 movement = Vector2.zero;
@@ -39,6 +40,7 @@ public class PaddleController : MonoBehaviour
 
     private void MoveObject(Vector2 movement)
     {
+        Debug.Log("Test: " + movement);
         rig.velocity = movement;
     }
 }
