@@ -12,6 +12,6 @@ public class MainMenuController : MonoBehaviour
 
     public void OpenAuthor()
     {
-        Debug.Log("Created by Yours Truly");
+        Debug.Log("Created by Achmad Rionov");
     }
 }
