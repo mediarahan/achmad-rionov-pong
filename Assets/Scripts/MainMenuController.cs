@@ -10,6 +10,16 @@ public class MainMenuController : MonoBehaviour
         SceneManager.LoadScene("Game");
     }
 
+    public void ToMainMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+
+    public void ToCredits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+
     public void OpenAuthor()
     {
         Debug.Log("Created by Achmad Rionov");

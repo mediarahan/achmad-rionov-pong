@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerupSpeedupController : MonoBehaviour
+public class PowerupPaddleSizeController : MonoBehaviour
 {
     public PowerupManager manager;
     public Collider2D ball;
-    public float magnitude;
+    public float scale;
     public int destroy;
 
     private void Start()
@@ -28,8 +28,9 @@ public class PowerupSpeedupController : MonoBehaviour
     {
         if (collision == ball)
         {
-            ball.GetComponent<BallController>().ActivatePowerupSpeedup(magnitude);
+            ball.GetComponent<BallController>().ActivatePUPaddleSize(scale);
             manager.RemovePowerUp(gameObject);
         }
     }
+
 }
